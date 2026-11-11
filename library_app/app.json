@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Biblioteca",
+    "slug": "library_app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "biblioteca",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.estudiante.biblioteca"
+    },
+    "android": {
+      "package": "com.estudiante.biblioteca"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Biblioteca usa la cámara para tomar la foto de portada de un libro.",
+          "photosPermission": "Biblioteca accede a tus fotos solo cuando eliges una portada.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
